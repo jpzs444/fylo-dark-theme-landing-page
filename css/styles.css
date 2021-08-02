@@ -1,0 +1,47 @@
+:root {
+    /* Primary Colors */
+    --darkBlueIntroEmailSignUp: hsl(217, 28%, 15%);
+    --darkBlueMain: hsl(218, 28%, 13%);
+    --darkBlueFooter: hsl(216, 53%, 9%);
+    --darkBlueTestimonials: hsl(219, 30%, 18%);
+    /* Accent Colors */
+    --cyanCTA: hsl(176, 68%, 64%);
+    --blueCTA: hsl(198, 60%, 50%);
+    --lightRedCTA: hsl(0, 100%, 63%);
+    /* Neutral Color */
+    --whiteText: hsl(0, 0%, 100%);
+    /* Fonts  */
+    --fontFamilyOpenSans: 'Open Sans', sans-serif;
+    --fontFamilyRaleway: 'Raleway', sans-serif;
+    --fontWeightRegular: 400;
+    --fontWeightBold: 700;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontFamilyOpenSans);
+    font-size: 0.875rem;
+    font-weight: var(--fontWeightRegular);
+    line-height: 1.5;
+}
+
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
