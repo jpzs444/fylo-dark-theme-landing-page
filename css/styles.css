@@ -10,7 +10,7 @@
     --lightRedCTA: hsl(0, 100%, 63%);
     /* Neutral Color */
     --whiteText: hsl(0, 0%, 100%);
-    /* Fonts  */
+    /* Typography  */
     --fontFamilyOpenSans: 'Open Sans', sans-serif;
     --fontFamilyRaleway: 'Raleway', sans-serif;
     --fontWeightRegular: 400;
@@ -20,6 +20,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 
 *,
@@ -31,11 +32,76 @@ html {
 }
 
 body {
+    color: var(--whiteText);
     font-family: var(--fontFamilyOpenSans);
     font-size: 0.875rem;
     font-weight: var(--fontWeightRegular);
     line-height: 1.5;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.fylo-landing-page {
+    background-color: var(--darkBlueMain);
+    max-width: 100vw;
+}
+
+/* Header Styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.125rem;
+}
+
+.navbar__img {
+    display: block;
+    width: 4.5625rem;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--fontFamilyRaleway);
+    font-size: 0.65625rem;
+    opacity: 0.65;
+}
+
+.nav-links li:last-child {
+    margin-right: 0.15rem;
+}
+
+.nav-links__item {
+    margin-left: 1.55rem;
+}
+
+/* Main Styles */
+
+main {
+    padding: 2rem 1.125rem 1.125rem;
+}
+
+.intro__img,
+.add-info__img {
+    display: block;
+    width: 90%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Footer */
 
 .attribution { 
     font-size: 0.6875rem; 
