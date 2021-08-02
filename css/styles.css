@@ -39,6 +39,16 @@ body {
     line-height: 1.5;
 }
 
+h1, h2, h3 {
+    font-family: var(--fontFamilyRaleway);
+    font-weight: var(--fontWeightBold);
+    opacity: 0.9;
+}
+
+p {
+    opacity: 0.75;
+}
+
 ul {
     list-style: none;
 }
@@ -93,12 +103,50 @@ main {
     padding: 2rem 1.125rem 1.125rem;
 }
 
+.intro,
+.perks,
+.add-info {
+    padding: 0 0.5rem;
+}
+
+.intro,
+.perks {
+    text-align: center;
+}
+
 .intro__img,
 .add-info__img {
     display: block;
     width: 90%;
+    height: auto;
     object-fit: cover;
     margin: 0 auto;
+}
+
+.intro__heading {
+    margin-top: 2.5rem;
+}
+
+.intro__paragraph {
+    margin-top: 1.25rem;
+    font-size: 0.75rem;
+    padding: 0 1rem;
+}
+
+.intro__button {
+    background-image: linear-gradient(to right, var(--cyanCTA), var(--blueCTA));
+    border-radius: 3.125rem;
+    display: inline-block;
+    font-family: var(--fontFamilyRaleway);
+    font-weight: var(--fontWeightBold);
+    font-size: 0.78125rem;
+    margin-top: 1.875rem;
+    opacity: 0.9;
+    padding: 0.75rem 4.375rem;
+}
+
+.perks {
+    margin-top: 7.5rem;
 }
 
 /* Footer */
