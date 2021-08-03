@@ -241,7 +241,59 @@ main {
 }
 
 .testimonials {
-    margin-top: 140px;
+    background-image: url("../images/bg-quotes.png");
+    background-position: 30px 7px;
+    background-repeat: no-repeat;
+    background-size: 20px 16px;
+    margin-top: 132px;
+}
+
+.testimonials__list {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    line-height: 1.8;
+}
+
+.testimonials__list p {
+    font-size: 9px;
+}
+
+.testimonials__item {
+    background-color: var(--darkBlueTestimonials);
+    border-radius: 3px;
+    margin: 22px 25px 0px;
+    padding: 22px 18px 14px;
+}
+
+.testimonials__user {
+    display: flex;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.testimonials__user-img {
+    width: 24px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.testimonials__user-info {
+    line-height: 1.8;
+    margin-left: 0.5rem;
+}
+
+.testimonials__user-info p:last-child {
+    letter-spacing: 1px;
+    font-size: 5.5px;
+}
+
+.testimonials__user-name {
+    letter-spacing: 1px;
+    font-weight: var(--fontWeightBold);
+}
+
+.cta {
+    margin-top: 9rem;
 }
 
 /* Footer */
