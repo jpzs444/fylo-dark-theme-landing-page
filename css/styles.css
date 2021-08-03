@@ -204,6 +204,46 @@ main {
     height: auto;
 }
 
+.add-info__heading {
+    font-size: 1rem;
+    padding-top: 3rem;
+}
+
+.add-info__paragraph {
+    margin-top: 1rem;
+}
+
+.add-info__link {
+    color: var(--cyanCTA);
+    display: inline-block;
+    border-bottom: 1px solid rgba(101, 226, 217, 0.7);
+    margin-top: 1.15rem;
+    max-width: 100%;
+    padding-bottom: 0.27rem;
+}
+
+.add-info__link:hover {
+    color: var(--whiteText);
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.add-info__link p {
+    font-size: 0.6875rem;
+    opacity: unset;
+}
+
+.add-info__link span {
+    opacity: 0.7;
+}
+
+.fa-arrow-circle-right {
+    margin-left: 0.25rem;
+}
+
+.testimonials {
+    margin-top: 140px;
+}
+
 /* Footer */
 
 .attribution { 
