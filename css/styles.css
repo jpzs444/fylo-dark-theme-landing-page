@@ -123,6 +123,8 @@ main {
     margin: 0 auto;
 }
 
+/* Main Intro Section Styles */
+
 .intro__img {
     width: 90%;
 }
@@ -140,6 +142,8 @@ main {
 .intro__button {
     background-image: linear-gradient(to right, var(--cyanCTA), var(--blueCTA));
     border-radius: 3.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.5px;
     display: inline-block;
     font-family: var(--fontFamilyRaleway);
     font-weight: var(--fontWeightBold);
@@ -148,6 +152,8 @@ main {
     opacity: 0.9;
     padding: 0.75rem 4.375rem;
 }
+
+/* Main Perks Section Styles */
 
 .perks {
     margin-top: 3.05rem;
@@ -195,6 +201,8 @@ main {
     padding: 0 0.5458rem;
 }
 
+/* Main Additional Information Styles */
+
 .add-info {
     margin-top: 130px;
 }
@@ -239,6 +247,8 @@ main {
 .fa-arrow-circle-right {
     margin-left: 0.25rem;
 }
+
+/* Main Testimonials Styles */
 
 .testimonials {
     background-image: url("../images/bg-quotes.png");
@@ -292,9 +302,73 @@ main {
     font-weight: var(--fontWeightBold);
 }
 
+/* Main Call-To-Action Styles */
+
 .cta {
+    background-color: var(--darkBlueIntroEmailSignUp);
     margin-top: 9rem;
+    padding: 36px 25px 39.5px;
+    text-align: center;
+    position: relative;
 }
+
+.cta__description {
+    line-height: 1.55;
+    margin-top: 0.85rem;
+    padding: 0 0.1543rem;
+}
+
+.cta__email-input {
+    all: unset;
+    box-sizing: border-box;
+    color: var(--darkBlueIntroEmailSignUp);
+    display: inline-block;
+    background-color: var(--whiteText);
+    border: 2px solid var(--whiteText);
+    border-radius: 3.125rem;
+    font-family: var(--fontFamilyOpenSans);
+    font-size: 0.75rem;
+    width: 100%;
+    height: 42px;
+    margin-top: 2rem;
+    padding: 0 1.8rem;
+    text-align: left;
+}
+
+.cta__email-input::placeholder {
+    font-size: 9px;
+    opacity: 0.4;
+}
+
+.cta__email-input:hover,
+.cta__email-input:focus {
+    border-color: var(--cyanCTA);
+}
+
+.cta__email-button {
+    all: unset;
+    display: inline-block;
+    background-image: linear-gradient(to right, var(--cyanCTA), var(--blueCTA));
+    border-radius: 3.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: var(--fontFamilyRaleway);
+    font-size: 0.75rem;
+    font-weight: var(--fontWeightBold);
+    margin-top: 21px;
+    width: 100%;
+    height: 42px;
+}
+
+.cta__error-message {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: var(--lightRedCTA);
+    font-size: 0.7rem;
+    font-weight: var(--fontWeightBold);
+    margin-top: 0.4rem;
+}
+
 
 /* Footer */
 
