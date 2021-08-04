@@ -79,6 +79,7 @@ a {
     display: block;
     width: 4.5625rem;
     height: auto;
+    opacity: 0.95;
 }
 
 .nav-links {
@@ -316,6 +317,7 @@ main {
 .cta__extra-container {
     background-color: var(--darkBlueIntroEmailSignUp);
     border-radius: 8px;
+    box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.3);
     padding: 36px 25px 38.25px;
     text-align: center;
     position: relative;
@@ -387,11 +389,113 @@ footer {
     padding: 225px 25px 39px;
 }
 
+.footer__img-container {
+    margin-left: 0.675rem;
+}
+
+.footer__img {
+    display: block;
+    width: 9.5rem;
+    opacity: 0.95;
+}
+
+.location {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2.5rem;
+}
+
+.location p {
+    font-size: 14px;
+}
+
+.location__icon {
+    display: block;
+    width: 0.725rem;
+    height: auto;
+    margin-top: 0.35rem;
+    margin-right: 1.5rem;
+    opacity: 0.9;
+}
+
+.contacts {
+    margin-bottom: 4.75rem;
+}
+
+.contact__detail {
+    display: flex;
+    align-items: center;
+    margin-top: 1.1rem;
+}
+
+.contacts__icon {
+    display: block;
+    opacity: 0.9;
+}
+
+.contacts__icon-phone {
+    width: 0.725rem;
+    margin-right: 1.5rem;
+}
+
+.contacts__icon-email {
+    width: 1rem;
+    margin-right: 1.22rem;
+}
+
+.about-us,
+.contact-us {
+    opacity: 0.75;
+}
+
+.about-us {
+    margin-bottom: 2.73rem;
+}
+
+.contact-us {
+    margin-bottom: 4.55rem;
+}
+
+.about-us__links > *,
+.contact-us__links > * {
+    margin-bottom: 0.8rem;
+}
+
+.socials {
+    margin-bottom: 1.5rem;
+}
+
+.socials__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials__list > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--whiteText);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-right: 0.75rem;
+}
+
+.socials__list li:last-child {
+    margin-right: 0;
+}
+
+.socials__list > *:hover {
+    border-color: var(--cyanCTA);
+    color: var(--cyanCTA);
+}
+
 .attribution { 
     font-size: 0.6875rem; 
     text-align: center; 
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: rgb(50, 200, 250); 
 }
