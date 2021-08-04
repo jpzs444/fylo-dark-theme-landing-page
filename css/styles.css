@@ -109,7 +109,7 @@ a {
 /* Main Styles */
 
 main {
-    padding: 2rem 1.125rem 305px;
+    padding: 2rem 1.125rem 19.0625rem;
     position: relative;
 }
 
@@ -169,7 +169,7 @@ main {
 }
 
 .perks__item {
-    margin-top: 80px;
+    margin-top: 5rem;
 }
 
 .perks__list {
@@ -183,27 +183,27 @@ main {
 }
 
 .perks__icon-desktop {
-    width: 59px;
+    width: 3.6875rem;
     height: auto;
 }
 
 .perks__icon-shield {
-    width: 48px;
+    width: 3rem;
     height: auto;
 }
 
 .perks__icon-collab {
-    width: 63px;
+    width: 3.9375rem;
     height: auto;
 }
 
 .perks__icon-folders {
-    width: 65px;
+    width: 4.0625rem;
 }
 
 .perks__heading {
-    margin-top: 25px;
-    margin-bottom: 8px;
+    margin-top: 1.5625rem;
+    margin-bottom: 0.5rem;
 }
 
 .perks__paragraph {
@@ -213,7 +213,7 @@ main {
 /* Main Additional Information Styles */
 
 .add-info {
-    margin-top: 130px;
+    margin-top: 8.125rem;
 }
 
 .add-info__img {
@@ -261,10 +261,10 @@ main {
 
 .testimonials {
     background-image: url("../images/bg-quotes.png");
-    background-position: 30px 7px;
+    background-position: 1.875rem 0.4375rem;
     background-repeat: no-repeat;
-    background-size: 20px 16px;
-    margin-top: 132px;
+    background-size: 1.25rem 1rem;
+    margin-top: 8.25rem;
 }
 
 .testimonials__list {
@@ -274,25 +274,25 @@ main {
 }
 
 .testimonials__list p {
-    font-size: 9px;
+    font-size: 0.5625rem;
 }
 
 .testimonials__item {
     background-color: var(--darkBlueTestimonials);
     border-radius: 3px;
-    margin: 22px 25px 0px;
-    padding: 22px 18px 15px;
+    margin: 1.375rem 1.5625rem 0;
+    padding: 1.375rem 1.125rem 0.9375rem;
 }
 
 .testimonials__user {
     display: flex;
     line-height: 1.6;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
 }
 
 .testimonials__user-img {
     display: block;
-    width: 24px;
+    width: 1.5rem;
     height: auto;
     border-radius: 50%;
 }
@@ -304,7 +304,7 @@ main {
 
 .testimonials__user-info p:last-child {
     letter-spacing: 1px;
-    font-size: 7px;
+    font-size: 0.4375rem;
 }
 
 .testimonials__user-name {
@@ -325,7 +325,7 @@ main {
     background-color: var(--darkBlueIntroEmailSignUp);
     border-radius: 8px;
     box-shadow: 6px 6px 6px 0px rgba(0,0,0,0.3);
-    padding: 36px 25px 38.25px;
+    padding: 2.25rem 1.5625rem 2.390625rem;
     text-align: center;
     position: relative;
 }
@@ -348,14 +348,14 @@ main {
     font-size: 0.75rem;
     font-weight: bold;
     width: 100%;
-    height: 42px;
+    height: 2.625rem;
     margin-top: 2rem;
     padding: 0 1.8rem;
     text-align: left;
 }
 
 .cta__email-input::placeholder {
-    font-size: 9px;
+    font-size: 0.5625rem;
     font-weight: var(--fontWeightRegular);
     opacity: 0.4;
 }
@@ -374,9 +374,9 @@ main {
     font-family: var(--fontFamilyRaleway);
     font-size: 0.75rem;
     font-weight: var(--fontWeightBold);
-    margin-top: 21px;
+    margin-top: 1.3125rem;
     width: 100%;
-    height: 42px;
+    height: 2.625rem;
 }
 
 .intro__button:hover,
@@ -402,7 +402,7 @@ main {
 
 footer {
     background-color: var(--darkBlueFooter);
-    padding: 225px 25px 39px;
+    padding: 14.0625rem 1.5625rem 2.4375rem;
 }
 
 .footer__img-container {
@@ -422,7 +422,7 @@ footer {
 }
 
 .location p {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .location__icon {
@@ -499,8 +499,8 @@ footer {
     align-items: center;
     border: 1px solid var(--whiteText);
     border-radius: 50%;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: 0.75rem;
 }
 
