@@ -10,6 +10,8 @@
     --lightRedCTA: hsl(0, 100%, 63%);
     /* Neutral Color */
     --whiteText: hsl(0, 0%, 100%);
+    /* Hover */
+    --cyanHover: rgb(140, 218, 228);
     /* Typography  */
     --fontFamilyOpenSans: 'Open Sans', sans-serif;
     --fontFamilyRaleway: 'Raleway', sans-serif;
@@ -88,7 +90,6 @@ a {
     align-items: center;
     font-family: var(--fontFamilyRaleway);
     font-size: 0.65625rem;
-    opacity: 0.65;
 }
 
 .nav-links li:last-child {
@@ -97,6 +98,12 @@ a {
 
 .nav-links__item {
     margin-left: 1.55rem;
+    opacity: 0.65;
+}
+
+.nav-links__item:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 /* Main Styles */
@@ -372,6 +379,15 @@ main {
     height: 42px;
 }
 
+.intro__button:hover,
+.intro__button:focus,
+.cta__email-button:hover,
+.cta__email-button:focus {
+    background-image: unset;
+    background-color: var(--cyanHover);
+    cursor: pointer;
+}
+
 .cta__error-message {
     position: absolute;
     left: 0;
@@ -443,9 +459,15 @@ footer {
     margin-right: 1.22rem;
 }
 
-.about-us,
-.contact-us {
+.about-us__links > * > *,
+.contact-us__links > * > *{
     opacity: 0.75;
+}
+
+.about-us__links > * > *:hover,
+.contact-us__links > * > *:hover {
+    opacity: 1;
+    font-weight: var(--fontWeightBold);
 }
 
 .about-us {
