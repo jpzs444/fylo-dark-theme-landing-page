@@ -70,6 +70,10 @@ a {
 
 /* Header Styles */
 
+header {
+    background-color: var(--darkBlueIntroEmailSignUp); /* remove if needed */
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -109,7 +113,7 @@ a {
 /* Main Styles */
 
 main {
-    padding: 2rem 1.125rem 19.0625rem;
+    /* padding: 2rem 1.125rem 19.0625rem; uncomment if needed*/
     position: relative;
 }
 
@@ -162,6 +166,15 @@ main {
     padding: 0.75rem 4.375rem;
 }
 
+.intro {
+    background-color: var(--darkBlueIntroEmailSignUp); /* remove if needed */
+    background-image: url("../images/bg-curvy-mobile.svg"); /* remove if needed */
+    background-repeat: no-repeat; /* remove if needed */
+    background-size: 100%; /* remove if needed */
+    background-position: center 100.5%; /* remove if needed */
+    padding: 2rem 1.625rem 0; /* remove if needed */
+}
+
 /* Main Perks Section Styles */
 
 .perks {
@@ -208,6 +221,10 @@ main {
 
 .perks__paragraph {
     padding: 0 0.5458rem;
+}
+
+.perks {
+    padding: 0 1.625rem; /* remove if needed */
 }
 
 /* Main Additional Information Styles */
@@ -257,11 +274,16 @@ main {
     margin-left: 0.25rem;
 }
 
+.add-info {
+    padding:0 1.625rem; /* remove if needed */
+}
+
 /* Main Testimonials Styles */
 
 .testimonials {
     background-image: url("../images/bg-quotes.png");
-    background-position: 1.875rem 0.4375rem;
+    /* background-position: 1.875rem 0.4375rem; uncomment if needed*/
+    background-position: 2.95rem 0.44rem; /* remove if needed */
     background-repeat: no-repeat;
     background-size: 1.25rem 1rem;
     margin-top: 8.25rem;
@@ -310,6 +332,10 @@ main {
 .testimonials__user-name {
     letter-spacing: 1px;
     font-weight: var(--fontWeightBold);
+}
+
+.testimonials {
+    padding: 0 1.125rem 19.0625rem; /* remove if needed */
 }
 
 /* Main Call-To-Action Styles */
