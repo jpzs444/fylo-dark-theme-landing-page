@@ -245,6 +245,7 @@ main {
 
 .add-info__paragraph {
     margin-top: 1rem;
+    padding-right: 0.5rem;
 }
 
 .add-info__link {
