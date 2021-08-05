@@ -75,10 +75,14 @@ header {
 }
 
 .navbar {
+    padding: 1.3755rem 1.125rem;
+}
+
+.navbar__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.3755rem 1.125rem;
+    margin: 0 auto;
 }
 
 .navbar__img {
@@ -276,7 +280,7 @@ main {
 }
 
 .add-info {
-    padding:0 1.625rem; /* remove if needed */
+    padding: 0 1.625rem; /* remove if needed */
 }
 
 /* Main Testimonials Styles */
@@ -548,3 +552,154 @@ footer {
 .attribution a { 
     color: rgb(50, 200, 250); 
 }
+
+/* Media Queries */
+
+@media only screen and (min-width: 500px) and (max-width: 991px) {
+    .intro__img {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    p {
+        font-size: 0.95rem;
+    }
+    
+    .navbar {
+        padding: 4.5rem 4.5rem;
+    }
+
+    .navbar__container {
+        max-width: 1296px;
+    }
+
+    .navbar__img {
+        width: 11rem;
+    }
+    
+    .nav-links {
+        font-size: 1.1rem;
+    }
+
+    .nav-links__item {
+        margin-left: 3.3rem;
+    }
+
+    .intro__img {
+        width: 70%;
+        max-width: 45rem;
+    }
+
+    .intro {
+        padding-top: 0; 
+    }
+
+    .intro__heading {
+        font-size: 2.4rem;
+        margin-top: 2.2rem;
+        max-width: 850.4px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro__paragraph {
+        font-size: 1.25rem;
+        margin: 2rem auto 0;
+        max-width: 616px;
+    }
+
+    .intro__button {
+        font-size: 0.98125rem;
+        padding: 1rem 6rem;
+    }
+
+    .perks {
+        margin-top: 6rem;
+    }
+
+    .perks__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 8rem;
+        margin: 0 auto;
+        max-width: 1004px;
+    }
+
+    .perks__icon-desktop {
+        width: 5rem;
+    }
+
+    .perks__icon-shield {
+        width: 4rem;
+    }
+
+    .perks__icon-collab {
+        width: 5.5375rem;
+    }
+
+    .perks__icon-folders {
+        width: 5.8rem;
+    }
+
+    .perks__heading {
+        font-size: 1.2rem;
+    }
+
+    .add-info__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+        padding: 0 6.75rem;
+        max-width: 1388px;
+        margin: 0 auto;
+    }
+
+    .add-info__img {
+        max-width: 38.5rem;
+    }
+
+    .add-info__heading {
+        font-size: 2.5rem;
+        max-width: 490px;
+    }
+
+    .add-info__paragraph {
+        padding-right: 5rem;
+    }
+
+    .add-info__link {
+        margin-top: 1.5rem;
+    }
+
+    .add-info__link p {
+        font-size: 1rem;
+    }
+    
+    .testimonials {
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimonials__list p {
+        font-size: 0.85rem;
+    }
+
+    .testimonials__list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: unset;
+        column-gap: 3rem;
+        max-width: 1086px;
+    }
+
+    .testimonials__item {
+        margin: 0;
+        padding: 2rem 1.5rem 1rem;
+    }
+
+    .testimonials__user-info p:first-child {
+        font-size: 0.6375rem;
+    }
+}
+
