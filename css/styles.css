@@ -244,6 +244,8 @@ main {
     display: block;
     width: 89%;
     height: auto;
+    max-width: 423px;
+    margin: 0 auto;
 }
 
 .add-info__heading {
@@ -300,6 +302,7 @@ main {
 .testimonials__list {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
     line-height: 1.8;
 }
 
@@ -559,9 +562,119 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (min-width: 500px) and (max-width: 991px) {
+@media only screen and (min-width: 500px) {
+    .navbar {
+        padding: 40px 50px;
+    }
+
     .intro__img {
         max-width: 500px;
+    }
+
+    .testimonials {
+        background-position: 4.95rem 0.44rem;
+    }
+
+    .cta {
+        margin: 0 3rem;
+    }
+
+    .footer__img {
+        width: 6rem;
+    }
+
+    .intro,
+    .perks,
+    .add-info {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .testimonials,
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+    } 
+}
+
+@media only screen and (min-width: 768px) {
+    .perks__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    
+    .cta {
+        margin: 0 5rem;
+    }
+
+    .footer__sections {
+        display: grid;
+        grid-template-columns: 3.8fr 2.5fr repeat(3, 1fr);
+        column-gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    .location {
+        margin-top: 0;
+    }
+
+    .contact-us,
+    .about-us,
+    .socials {
+        margin-bottom: 0;
+    }
+
+    .contact__detail {
+        margin-top: 0;
+    }
+
+    .contacts__details li:first-child {
+        margin-bottom: 1rem;
+    }
+
+    .about-us a,
+    .contact-us a {
+        font-size: 0.7rem;
+    }
+
+    .attribution {
+        margin-top: 2rem;
+    }
+
+    .testimonials {
+        background-image: none;
+    }
+
+    .testimonials__list {
+        background-image: url("../images/bg-quotes.png");
+        background-repeat: no-repeat;
+        background-size: 3.25rem 2.7rem;
+        background-position: 3.4rem 0rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: unset;
+        column-gap: 1rem;
+        max-width: 1250px;
+        padding: 2.1rem 4rem 0;
+    }
+
+    .testimonials__item {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 813px) {
+    
+}
+
+@media only screen and (min-width: 991px) {
+    .add-info__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 0 5rem;
+        max-width: 1388px;
+        margin: 0 auto;
     }
 }
 
@@ -575,7 +688,7 @@ footer {
     }
 
     .navbar__container {
-        max-width: 1296px;
+        max-width: 1250px;
     }
 
     .navbar__img {
@@ -598,7 +711,7 @@ footer {
     .intro {
         padding-top: 0; 
         background-image: url("../images/bg-curvy-desktop.svg");
-        background-position: center 110%;
+        background-position: center 100%;
     }
 
     .intro__heading {
@@ -625,8 +738,6 @@ footer {
     }
 
     .perks__list {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         column-gap: 8rem;
         margin: 0 auto;
         max-width: 1004px;
@@ -652,20 +763,17 @@ footer {
         font-size: 1.2rem;
     }
 
+    .add-info {
+        margin-top: 160px;
+    }
+
     .add-info__container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         column-gap: 3.5rem;
-        align-items: center;
-        padding: 0 5rem;
-        max-width: 1388px;
-        margin: 0 auto;
     }
 
     .add-info__img {
         width: 100%;
         max-width: 38.5rem;
-        /* margin: 0; */
     }
 
     .add-info__heading {
@@ -703,10 +811,7 @@ footer {
         column-gap: 2.75rem;
         max-width: 1250px;
         padding: 2.1rem 4rem 0;
-        background-image: url("../images/bg-quotes.png");
-        background-repeat: no-repeat;
-        background-size: 3.25rem 2.7rem;
-        background-position: 3.4rem 0rem;
+        
     }
 
     .testimonials__item {
@@ -768,7 +873,7 @@ footer {
 
     footer {
         padding-top: 170px;
-        padding: 170px 2rem 2.4375rem;
+        padding: 200px 72px 2.4375rem;
     }
 
     .contacts p {
@@ -793,17 +898,6 @@ footer {
         width: 6.8rem;
     }
 
-    .footer__sections {
-        display: grid;
-        grid-template-columns: 3.8fr 2.5fr repeat(3, 1fr);
-        column-gap: 3rem;
-        margin-top: 3rem;
-    }
-
-    .location {
-        margin-top: 0;
-    }
-
     .location p {
         font-size: 0.9rem;
         padding-right: 2.38rem;
@@ -813,26 +907,26 @@ footer {
         width: 1rem;
     }
 
-    .contact-us,
-    .about-us,
-    .socials {
-        margin-bottom: 0;
-    }
-
-    .contact__detail {
-        margin-top: 0;
-    }
-
-    .contacts__details li:first-child {
-        margin-bottom: 1rem;
-    }
-
     .socials__list > * {
         width: 2rem;
         height: 2rem;
     }
+}
 
-    .attribution {
-        margin-top: 2rem;
+@media only screen and (min-width: 1024px) and (max-width: 1059px) {
+    
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .navbar__img {
+        width: 130px;
+    }
+
+    .perks {
+        padding: 0 7rem;
+    }
+
+    .perks__list {
+        column-gap: 4rem;
     }
 }
