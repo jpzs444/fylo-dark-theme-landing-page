@@ -137,6 +137,9 @@ main {
     display: block;
     height: auto;
     object-fit: cover;
+}
+
+.intro__img {
     margin: 0 auto;
 }
 
@@ -238,6 +241,7 @@ main {
 }
 
 .add-info__img {
+    display: block;
     width: 89%;
     height: auto;
 }
@@ -287,7 +291,6 @@ main {
 
 .testimonials {
     background-image: url("../images/bg-quotes.png");
-    /* background-position: 1.875rem 0.4375rem; uncomment if needed*/
     background-position: 2.95rem 0.44rem; /* remove if needed */
     background-repeat: no-repeat;
     background-size: 1.25rem 1rem;
@@ -530,6 +533,7 @@ footer {
     align-items: center;
     border: 1px solid var(--whiteText);
     border-radius: 50%;
+    cursor: pointer;
     width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.75rem;
@@ -567,7 +571,7 @@ footer {
     }
     
     .navbar {
-        padding: 4.5rem 4.5rem;
+        padding: 3.6rem 4.5rem;
     }
 
     .navbar__container {
@@ -593,6 +597,8 @@ footer {
 
     .intro {
         padding-top: 0; 
+        background-image: url("../images/bg-curvy-desktop.svg");
+        background-position: center 110%;
     }
 
     .intro__heading {
@@ -649,15 +655,17 @@ footer {
     .add-info__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 3rem;
+        column-gap: 3.5rem;
         align-items: center;
-        padding: 0 6.75rem;
+        padding: 0 5rem;
         max-width: 1388px;
         margin: 0 auto;
     }
 
     .add-info__img {
+        width: 100%;
         max-width: 38.5rem;
+        /* margin: 0; */
     }
 
     .add-info__heading {
@@ -666,7 +674,7 @@ footer {
     }
 
     .add-info__paragraph {
-        padding-right: 5rem;
+        padding-right: 2rem;
     }
 
     .add-info__link {
@@ -680,6 +688,9 @@ footer {
     .testimonials {
         display: flex;
         justify-content: center;
+        margin-top: 12rem;
+        background-image: none;
+        padding-bottom: 23rem;
     }
 
     .testimonials__list p {
@@ -689,17 +700,139 @@ footer {
     .testimonials__list {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: unset;
-        column-gap: 3rem;
-        max-width: 1086px;
+        column-gap: 2.75rem;
+        max-width: 1250px;
+        padding: 2.1rem 4rem 0;
+        background-image: url("../images/bg-quotes.png");
+        background-repeat: no-repeat;
+        background-size: 3.25rem 2.7rem;
+        background-position: 3.4rem 0rem;
     }
 
     .testimonials__item {
         margin: 0;
-        padding: 2rem 1.5rem 1rem;
+        padding: 2rem 1.6rem 1.475rem;
+    }
+
+    .testimonials__user {
+        margin-top: 1.4rem;
     }
 
     .testimonials__user-info p:first-child {
         font-size: 0.6375rem;
     }
-}
 
+    .cta {
+        bottom: -6.9rem;
+    }
+
+    .cta__extra-container {
+        font-size: 1.75rem;
+        max-width: 870px;
+        margin: 0 auto;
+        padding: 2.25rem 4rem 2.6rem; 
+    }
+
+    .cta__description {
+        margin-top: 1rem;
+    }
+
+    .cta__email {
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        column-gap: 2rem;
+        margin-top: 2.4rem;
+    }
+
+    .cta__email-input {
+        margin-top: 0;
+        padding: 0 2rem;
+        height: 3.1rem;
+    }
+
+    .cta__email-input::placeholder {
+        font-size: 0.7rem;
+    }
+
+    .cta__email-button {
+        margin-top: 0;
+        height: 3.1rem;
+        font-size: 0.9rem;
+    }
+
+    .cta__error-message {
+        max-width: 675px;
+        margin: 0.4rem auto;
+        text-align: left;
+    }
+
+    footer {
+        padding-top: 170px;
+        padding: 170px 2rem 2.4375rem;
+    }
+
+    .contacts p {
+        font-size: 0.9rem;
+    }
+
+    .about-us a,
+    .contact-us a {
+        font-size: 0.9rem;
+    }
+
+    .footer__container {
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+
+    .footer__img-container {
+        margin-left: 0;
+    }
+
+    .footer__img {
+        width: 6.8rem;
+    }
+
+    .footer__sections {
+        display: grid;
+        grid-template-columns: 3.8fr 2.5fr repeat(3, 1fr);
+        column-gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    .location {
+        margin-top: 0;
+    }
+
+    .location p {
+        font-size: 0.9rem;
+        padding-right: 2.38rem;
+    }
+
+    .location__icon {
+        width: 1rem;
+    }
+
+    .contact-us,
+    .about-us,
+    .socials {
+        margin-bottom: 0;
+    }
+
+    .contact__detail {
+        margin-top: 0;
+    }
+
+    .contacts__details li:first-child {
+        margin-bottom: 1rem;
+    }
+
+    .socials__list > * {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .attribution {
+        margin-top: 2rem;
+    }
+}
