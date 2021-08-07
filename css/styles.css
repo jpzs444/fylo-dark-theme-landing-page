@@ -244,7 +244,7 @@ main {
     display: block;
     width: 89%;
     height: auto;
-    max-width: 423px;
+    max-width: 26.4375rem;
     margin: 0 auto;
 }
 
@@ -562,7 +562,7 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (max-width: 287px) {
+@media only screen and (max-width: 17.9375em) {
     .navbar__img {
         width: 3rem;
     }
@@ -572,13 +572,13 @@ footer {
     }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 31.25em) {
     .navbar {
-        padding: 40px 50px;
+        padding: 2.5rem 3.125rem;
     }
 
     .intro__img {
-        max-width: 500px;
+        max-width: 31.25rem;
     }
 
     .testimonials {
@@ -596,18 +596,18 @@ footer {
     .intro,
     .perks,
     .add-info {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 
     .testimonials,
     footer {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 3.125rem;
+        padding-right: 3.125rem;
     } 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
     .perks__list {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -626,7 +626,7 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: unset;
         column-gap: 1rem;
-        max-width: 1250px;
+        max-width: 78.125rem;
         padding: 2.1rem 4rem 0;
     }
 
@@ -688,22 +688,18 @@ footer {
     }
 }
 
-@media only screen and (min-width: 813px) {
-    
-}
-
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 61.9375em) {
     .add-info__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        padding: 0 5rem;
-        max-width: 1388px;
         margin: 0 auto;
+        max-width: 86.75rem;
+        padding: 0 5rem;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 64em) {
     p {
         font-size: 0.95rem;
     }
@@ -713,7 +709,7 @@ footer {
     }
 
     .navbar__container {
-        max-width: 1250px;
+        max-width: 78.125rem;
     }
 
     .navbar__img {
@@ -741,16 +737,16 @@ footer {
 
     .intro__heading {
         font-size: 2.4rem;
-        margin-top: 2.2rem;
-        max-width: 850.4px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 2.2rem;
+        max-width: 53.15rem;
     }
 
     .intro__paragraph {
         font-size: 1.25rem;
         margin: 2rem auto 0;
-        max-width: 616px;
+        max-width: 38.5rem;
     }
 
     .intro__button {
@@ -765,7 +761,7 @@ footer {
     .perks__list {
         column-gap: 8rem;
         margin: 0 auto;
-        max-width: 1004px;
+        max-width: 62.75rem;
     }
 
     .perks__icon-desktop {
@@ -789,7 +785,7 @@ footer {
     }
 
     .add-info {
-        margin-top: 160px;
+        margin-top: 10rem;
     }
 
     .add-info__container {
@@ -803,7 +799,7 @@ footer {
 
     .add-info__heading {
         font-size: 2.5rem;
-        max-width: 490px;
+        max-width: 30.625rem;
     }
 
     .add-info__paragraph {
@@ -821,8 +817,8 @@ footer {
     .testimonials {
         display: flex;
         justify-content: center;
-        margin-top: 12rem;
         background-image: none;
+        margin-top: 12rem;
         padding-bottom: 23rem;
     }
 
@@ -834,7 +830,7 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: unset;
         column-gap: 2.75rem;
-        max-width: 1250px;
+        max-width: 78.125rem;
         padding: 2.1rem 4rem 0;
         
     }
@@ -858,8 +854,8 @@ footer {
 
     .cta__extra-container {
         font-size: 1.75rem;
-        max-width: 870px;
         margin: 0 auto;
+        max-width: 54.375rem;
         padding: 2.25rem 4rem 2.6rem; 
     }
 
@@ -873,9 +869,9 @@ footer {
     }
 
     .cta__email-input {
+        height: 3.1rem;
         margin-top: 0;
         padding: 0 2rem;
-        height: 3.1rem;
     }
 
     .cta__email-input::placeholder {
@@ -883,20 +879,19 @@ footer {
     }
 
     .cta__email-button {
-        margin-top: 0;
-        height: 3.1rem;
         font-size: 0.9rem;
+        height: 3.1rem;
+        margin-top: 0;
     }
 
     .cta__error-message {
-        max-width: 675px;
         margin: 0.4rem auto;
+        max-width: 42.1875rem;
         text-align: left;
     }
 
     footer {
-        padding-top: 170px;
-        padding: 200px 72px 2.4375rem;
+        padding: 12.5rem 4.5rem 2.4375rem;
     }
 
     .contacts p {
@@ -909,8 +904,8 @@ footer {
     }
 
     .footer__container {
-        max-width: 1180px;
         margin: 0 auto;
+        max-width: 73.75rem;
     }
 
     .footer__img-container {
@@ -936,13 +931,9 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1059px) {
-    
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+@media only screen and (min-width: 64em) and (max-width: 75em) {
     .navbar__img {
-        width: 130px;
+        width: 8.125rem;
     }
 
     .perks {
